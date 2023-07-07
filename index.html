@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>pdf to text File Converter</h1>
+        <input type="file" id="pdfFileInput" onchange="showFileName()">
+        <br>
+        <button onclick="convertToText()" class="convert-btn">Convert</button>
+        <a id="downloadLink" download>Download Text</a>
+    </div>
+    <div id="cont" style="display: none;">
+        <h2>Preview</h2>
+        <div id="output"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
